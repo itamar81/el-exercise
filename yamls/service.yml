@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: elementor-svc
+spec:
+  selector:
+    app: elementor/exercice
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: http
